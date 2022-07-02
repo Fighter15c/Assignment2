@@ -1,9 +1,9 @@
 {
-  "name": "weblabterminal",
+  "name": "assignment2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +13,15 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "mongoose": "^6.4.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fighter15c/Assignment2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fighter15c/Assignment2/issues"
+  },
+  "homepage": "https://github.com/Fighter15c/Assignment2#readme",
+  "description": ""
 }

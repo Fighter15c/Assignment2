@@ -5,10 +5,13 @@ const path = require("path");
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/terminalProducts", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose
+  .connect("mongodb://localhost:27017/terminalProducts", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(console.log("ConnEcted"))
+  .catch("not connected");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
