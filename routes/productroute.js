@@ -26,7 +26,7 @@ router.post("/add", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-router.get("/delete/:id", (req, res) => {
+router.delete("/delete/:id", (req, res) => {
   const _id = req.params.id;
   Product.findByIdAndDelete(_id)
     .then(() => {
@@ -36,7 +36,7 @@ router.get("/delete/:id", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-router.get("/update/:id", (req, res) => {
+router.put("/update/:id", (req, res) => {
   const id = req.params.id;
   Product.findByIdAndUpdate(id, req.body, { useFindAndModify: false }).then(
     () => {
